@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-### Problem solving and Beer V1
-
-### Fibonacci Sequence ###
+### Trixing with Fibonacci Sequence ###
+# V1
 
 import sys
 sys.path.insert(1, "/home/hound/Desktop/hulder/fibo/modules")
@@ -11,7 +10,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from math import e
 from math import pi
-
 
 
 
@@ -30,7 +28,6 @@ def display_sequence(num_arr):
 
 
 
-
 def ebonanacci_plot(labels, fibo_out):
 
     tmp_arr = []
@@ -39,7 +36,6 @@ def ebonanacci_plot(labels, fibo_out):
 
     for x in fibo_out:
         fibo_out[counter_e] = fibo_out[counter_e] + (1-e**(-fibo_out[counter_e] + pi) + pi)
-        print("Ebooonachiii")
         counter_e += 1
 
 	
@@ -63,8 +59,7 @@ def ebonanacci_plot(labels, fibo_out):
                             xy=(rect.get_x() + rect.get_width() / 2, height),
                             xytext=(0, 3),  # 3 points vertical offset
                             textcoords="offset points",
-                              color="black",
-                                                #rect.color="red",
+                            color="black",
                             ha='center', va='bottom')
 
     plt.xlabel("Value")
@@ -85,9 +80,6 @@ def main():
 
 	pfv.plot_fibo_values(nums, fibo_out)
 	ebonanacci_plot(nums, fibo_out)
-
-
-
 
 
 
