@@ -40,7 +40,7 @@ def ebonanacci_plot(labels, fibo_out):
 
 	
     x = np.arange(len(labels))
-    width = 0.35  # the width of the bars
+    width = 0.35
 
     fig, ax = plt.subplots()
     rects1 = ax.bar(x - width/10, fibo_out, width*2, label="Ebonanacci Sequence", color="red")
@@ -52,7 +52,6 @@ def ebonanacci_plot(labels, fibo_out):
 
 
     def autolabel(rects):
-            """Attach a text label above each bar in *rects*, displaying its height."""
             for rect in rects:
                 height = rect.get_height()
                 ax.annotate('{}'.format(height),
