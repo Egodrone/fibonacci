@@ -3,13 +3,13 @@
 # V1
 
 import sys
-sys.path.insert(1, "/home/hound/Desktop/hulder/fibo/modules")
-import plot_fibo_bar_values as pfv
+from modules import plot_fibo_bar_values as pv
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 from math import e
 from math import pi
+
 
 
 
@@ -76,14 +76,14 @@ def main():
 	for x in fibo_out:
 		print(x)
 	
-
-	pfv.plot_fibo_values(nums, fibo_out)
+	plt_values = pv.Plot_values(nums, fibo_out)
+	plt_values.plot_fibo_values()
 	ebonanacci_plot(nums, fibo_out)
 
 
 
 if __name__ == "__main__":
-	print("Fibonacci Sequence and Trixing")
+	print(" Fibonacci Sequence and Trixing ")
 	main()
 
 
